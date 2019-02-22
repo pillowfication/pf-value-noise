@@ -1,0 +1,34 @@
+{
+  "name": "pf-value-noise",
+  "version": "1.0.0",
+  "description": "N-Dimensional Value Noise Generator",
+  "author": {
+    "name": "Markus Tran",
+    "email": "thebluepillow@gmail.com",
+    "url": "http://pillowfication.com"
+  },
+  "homepage": "https://github.com/pillowfication/pf-value-noise",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pillowfication/pf-value-noise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pillowfication/pf-value-noise/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/standard/bin/cmd.js"
+  },
+  "dependencies": {
+    "seedrandom": "^2.4.4"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  },
+  "keywords": [
+    "noise",
+    "perlin",
+    "random"
+  ],
+  "license": "MIT"
+}

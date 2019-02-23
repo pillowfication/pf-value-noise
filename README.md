@@ -2,9 +2,7 @@
 
 **N-Dimensional Value Noise Generator** - A [value noise](https://en.wikipedia.org/wiki/Value_noise) generator for any number of dimensions. Similar to, but faster than [Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise).
 
-<p align="center">
-  ![Rainbow Value Noise](/rainbow-value-noise.png)
-</p>
+![Rainbow Value Noise](/rainbow-value-noise.png)
 
 ## Examples
 

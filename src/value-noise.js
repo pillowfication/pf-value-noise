@@ -84,8 +84,9 @@ class ValueNoise {
 
   get (coordinates) {
     // Scale coordinates by wavelength
+    const coord = []
     for (let subscript = 0; subscript < this.dim; ++subscript) {
-      coordinates[subscript] /= this.lam
+      coord[subscript] = coordinates[subscript] / this.lam
     }
 
     // Repeatedly add values from each octave

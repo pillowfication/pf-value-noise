@@ -94,7 +94,7 @@ class ValueNoise {
     const x = []
     for (let octave = 0, scale = 1, weight = 1; octave < this.oct; ++octave, scale *= this.sca, weight *= this.per) {
       for (let subscript = 0; subscript < this.dim; ++subscript) {
-        x[subscript] = coordinates[subscript] * scale
+        x[subscript] = coord[subscript] * scale
       }
       value += this._get(x) * weight
     }

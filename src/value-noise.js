@@ -1,4 +1,4 @@
-const random = require('random-seed')
+const seedrandom = require('pf-seedrandom')
 
 function defaultify (options) {
   return Object.assign({
@@ -14,14 +14,12 @@ function defaultify (options) {
   }, options)
 }
 
-class Perlin {
+class ValueNoise {
   constructor (options) {
     options = defaultify(options)
 
     this._data = {}
-    const uheprng = random.create()
-    uheprng.seed(options.seed)
-    this._random = uheprng.random
+    this._random = seedrandom(options.seed)
 
     this.dim = options.dimensions
     this.di2 = 1 << options.dimensions
@@ -105,4 +103,4 @@ class Perlin {
   }
 }
 
-module.exports = Perlin
+module.exports = ValueNoise

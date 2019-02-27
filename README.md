@@ -41,7 +41,7 @@ const ctx = canvas.getContext('2d', { alpha: false })
 
 // Create the image data
 const ValueNoise = require('pf-value-noise')
-const noise3D = new ValueNoise({ dimensions: 3 })
+const noise3D = new ValueNoise({ dimensions: 3, seed: 'pillow' })
 const resolution = 100
 const imageData = ctx.createImageData(width, height)
 let dataIndex = 0
@@ -88,6 +88,8 @@ const noiseGenerator = new ValueNoise()
 | `octaveScale`   | Number   | `1/2`    | Scaling for successive octaves |
 | `persistence`   | Number   | `1/2`    | Weight for successive octaves  |
 | `interpolation` | Function | *cosine* | Interpolation function used    |
+
+Note that even with the same seed, a different order of `<Perlin>.get()` calls can change the overall noise function since its values are generated lazily.
 
 `wavelength` sets the size of the first octave, and each successive octave will be `octaveScale` times the previous. The octaves are centered about the origin and added together according to their weight. The first octave has a weight of `1`, and each successive octave will be `persistence` times the previous.
 

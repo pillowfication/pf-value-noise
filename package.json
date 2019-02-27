@@ -1,6 +1,6 @@
 {
   "name": "pf-value-noise",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "N-Dimensional Value Noise Generator",
   "author": {
     "name": "Markus Tran",
